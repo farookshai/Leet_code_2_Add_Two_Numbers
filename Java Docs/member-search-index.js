@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.sum_of_linkedlist","c":"Node","l":"getNext()"},{"p":"com.sum_of_linkedlist","c":"Node","l":"getValue()"},{"p":"com.sum_of_linkedlist","c":"Node","l":"Node(int)","url":"%3Cinit%3E(int)"},{"p":"com.sum_of_linkedlist","c":"Node","l":"setNext(Node)","url":"setNext(com.sum_of_linkedlist.Node)"}]
