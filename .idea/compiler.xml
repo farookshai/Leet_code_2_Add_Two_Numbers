@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="shubham_singh_rawat_23_Mar_2022" />
+        <module name="Leet code 2. Add Two Numbers" />
       </profile>
     </annotationProcessing>
   </component>
