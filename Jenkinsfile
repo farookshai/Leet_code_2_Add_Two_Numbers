@@ -31,6 +31,10 @@ pipeline {
             echo'deploying'
         }
     }
-    
-}
+        stage('release'){
+        steps{
+            echo'releasing'
+        }
+        }
+    }
 }
