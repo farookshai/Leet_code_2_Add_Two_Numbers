@@ -28,7 +28,14 @@ pipeline {
 
     stage('nexus'){
         steps{
-            artifacts: [[artifactId: 'pom.artifactId', classifier: '', file: 'pom.xml', type: 'pom']],
+            artifacts: [[
+                artifactId: 'leetcode2',
+                classifier: '',
+                file: 'jar',
+                type: 'target/leetcode2-1.0.0'
+            ]
+                       
+           ],
             nexusArtifactUploader credentialsId: '90058fbf-3833-43ee-889e-adec59741ce9',
             groupId: 'nexus', 
             nexusUrl: '34.236.153.106:8081',
