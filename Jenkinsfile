@@ -42,7 +42,7 @@ pipeline {
             nexusVersion: 'nexus3', 
             protocol: 'http',
             repository: 'http://34.236.153.106:8081/repository/myrepo/',
-            version: '3.41.1'
+            version: '1.0.0'
         }
     }
     
