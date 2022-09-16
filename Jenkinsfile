@@ -25,6 +25,18 @@ pipeline {
             
         }
     }
+
+    stage('nexus'){
+        steps{
+            nexusArtifactUploader credentialsId: '90058fbf-3833-43ee-889e-adec59741ce9',
+            groupId: 'nexus', 
+            nexusUrl: '34.236.153.106:8081',
+            nexusVersion: 'nexus3', 
+            protocol: 'http',
+            repository: 'http://34.236.153.106:8081/repository/myrepo/',
+            version: '3.41.1'
+        }
+    }
     
     stage('deploy'){
         steps{
