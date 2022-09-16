@@ -28,7 +28,8 @@ pipeline {
 
     stage('nexus'){
         steps{
-            artifacts: [[
+            
+            nexusArtifactUploader artifacts: [[
                 artifactId: 'leetcode2',
                 classifier: '',
                 file: 'jar',
@@ -36,7 +37,7 @@ pipeline {
             ]
                        
            ],
-            nexusArtifactUploader credentialsId: '90058fbf-3833-43ee-889e-adec59741ce9',
+            credentialsId: '90058fbf-3833-43ee-889e-adec59741ce9',
             groupId: 'nexus', 
             nexusUrl: '34.236.153.106:8081',
             nexusVersion: 'nexus3', 
