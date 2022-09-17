@@ -33,7 +33,7 @@ pipeline {
                 artifactId: 'leetcode2',
                 classifier: '',
                 file: 'jar',
-                type: 'target/1.0-SNAPSHOT.jar'
+                type: 'target/my-app-1.0-SNAPSHOT.jar'
             ]
                        
            ],
