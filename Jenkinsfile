@@ -18,13 +18,6 @@ pipeline {
         }
     }
     
-    stage('test'){
-        steps{
-            echo 'for testing'
-            sh 'mvn test'
-            
-        }
-    }
 
     stage('nexus'){
         steps{
